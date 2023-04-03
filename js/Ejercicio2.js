@@ -4,18 +4,19 @@ class Cuenta {
         this.saldo = saldo;
     }
      ingresar (){
-        this.saldo= saldo+500;
+        this.saldoFinal=this.saldo+500;
+        return this.saldoFinal;
     }
      extraer (){
-        this.saldo = saldo-100;
+        this.saldoFinal = this.saldo-100;
+        return this.saldoFinal;
     }
-    informar (){
-        console.log(`La cuenta posee ${this.saldo} pesos`);
-        document.write(`La cuenta posee ${this.saldo} pesos`);
+    get informar (){
+        document.write(`La cuenta posee ${this.saldoFinal} pesos`);
     }
 }
 
-Cuenta1 = new Cuenta ('Pedro',1000);
+const Cuenta1 = new Cuenta ('Pedro',1000);
 
 Cuenta1.ingresar();
 
