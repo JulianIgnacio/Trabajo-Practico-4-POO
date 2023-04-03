@@ -41,7 +41,6 @@ class Persona {
     }
      generarDNI (){
         if (this.DNI === null){
-            
         }
     }
 }
